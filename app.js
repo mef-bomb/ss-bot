@@ -14,7 +14,7 @@ var https_options = {
 };
 
 // Setup Restify Server
-var server = restify.createServer(https_options);
+var server = restify.createServer();
 server.listen(process.env.port || process.env.PORT || 3978, function () {
    console.log('%s listening to %s', server.name, server.url); 
 });
