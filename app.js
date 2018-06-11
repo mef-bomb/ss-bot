@@ -3,8 +3,18 @@ const luisUrl = 'https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/e0123
 var restify = require('restify');
 var builder = require('botbuilder');
 
+
+var fs = require('fs');
+
+// Setup some https server options
+//generated from http://www.selfsignedcertificate.com/
+var https_options = {
+    key: fs.readFileSync('./https/https.key'), //on current folder
+    certificate: fs.readFileSync('./https/https.cert')
+};
+
 // Setup Restify Server
-var server = restify.createServer();
+var server = restify.createServer(https_options);
 server.listen(process.env.port || process.env.PORT || 3978, function () {
    console.log('%s listening to %s', server.name, server.url); 
 });
