@@ -17,6 +17,10 @@ var connector = new builder.ChatConnector({
 
 // Listen for messages from users 
 server.post('/api/messages', connector.listen());
+server.get('/healthcheck', (req, res, next) => {
+    res.status(200);
+    res.send('OK');
+});
 
 var bot = new builder.UniversalBot(connector, function (session) {
     session.send("You said: %s", session.message.text);
