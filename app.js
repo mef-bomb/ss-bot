@@ -6,13 +6,6 @@ var builder = require('botbuilder');
 
 var fs = require('fs');
 
-// Setup some https server options
-//generated from http://www.selfsignedcertificate.com/
-var https_options = {
-    key: fs.readFileSync('./https/https.key'), //on current folder
-    certificate: fs.readFileSync('./https/https.cert')
-};
-
 // Setup Restify Server
 var server = restify.createServer();
 server.listen(process.env.port || process.env.PORT || 3978, function () {
