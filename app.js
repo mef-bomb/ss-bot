@@ -3,6 +3,13 @@ const luisUrl = 'https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/e0123
 var restify = require('restify');
 var builder = require('botbuilder');
 
+const dialog = {
+    DOCTOR: 'DOCTOR!',
+    KE: 'ke',
+    WORKDAY: 'WORKDAY!',
+    CONFLUENCE: 'confluence!'
+}
+
 
 var fs = require('fs');
 
@@ -35,7 +42,7 @@ bot.recognizer(recognizer);
 
 bot.dialog('confluence',
     (session) => {
-        session.send('CONFLUENCE!!');
+        session.send(dialog.CONFLUENCE);
         // session.endDialog();
     }
 ).triggerAction({
@@ -44,9 +51,28 @@ bot.dialog('confluence',
 
 bot.dialog('workday',
     (session) => {
-        session.send('WORKDAY!!');
+        session.send(dialog.WORKDAY);
         // session.endDialog();
     }
 ).triggerAction({
     matches: 'workday'
 })
+
+bot.dialog('ke',
+    (session) => {
+        session.send(dialog.KE);
+        // session.endDialog();
+    }
+).triggerAction({
+    matches: 'ke'
+})
+
+bot.dialog('doctor',
+    (session) => {
+        session.send(dialog.DOCTOR);
+        // session.endDialog();
+    }
+).triggerAction({
+    matches: 'doctor'
+})
+
