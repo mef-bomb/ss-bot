@@ -4,10 +4,20 @@ var restify = require('restify');
 var builder = require('botbuilder');
 
 const dialog = {
-    DOCTOR: 'DOCTOR!',
-    KE: 'ke',
-    WORKDAY: 'WORKDAY!',
-    CONFLUENCE: 'confluence!'
+    DOCTOR: 'Please find corporate doctor schedule here https://softserveinc.facebook.com/groups/1091213570989488/',
+    KE: `Please request Knowledge Evaluation for the next position here https://jira.softserveinc.com/secure/CreateIssueDetails!init.jspa?pid=10231&issuetype=19
+        Also please find training catalog and career map links below, i hope they will be useful:
+        Training Catalog- https://softserve.csod.com/LMS/BrowseTraining/BrowseTraining.aspx?tab_page_id=-6#f=1&s=544&o=1
+        Career Map - https://career-map.softservecom.com/map/#
+        Career plan- https://career-plan.softserveinc.com/#/group/
+        `,
+    WORKDAY: `Please visit workday: https://wd3.myworkday.com/softserve/d/home.htmld
+        Here you can find infromation about your time offs, salary reports, information about your mates.
+        Also in the workday you are able to request a vacation.
+        `,
+    CONFLUENCE: `Please visit confluence: https://confluence.softserveinc.com/index.action#all-updates
+        Here you can find any project related question, project&company processes and many other useful infromation.
+        `
 }
 
 
