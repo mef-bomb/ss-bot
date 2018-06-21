@@ -12,11 +12,11 @@ const dialog = {
         \nCareer plan\n https://career-plan.softserveinc.com/#/group/
         `,
     WORKDAY: `Please visit workday: https://wd3.myworkday.com/softserve/d/home.htmld
-        Here you can find infromation about your time offs, salary reports, information about your mates.
-        Also in the workday you are able to request a vacation.
+        \nHere you can find infromation about your time offs, salary reports, information about your mates.
+        \nAlso in the workday you are able to request a vacation.
         `,
     CONFLUENCE: `Please visit confluence: https://confluence.softserveinc.com/index.action#all-updates
-        Here you can find any project related question, project&company processes and many other useful infromation.
+        \nHere you can find any project related question, project&company processes and many other useful infromation.
         `
 }
 
