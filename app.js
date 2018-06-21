@@ -5,11 +5,11 @@ var builder = require('botbuilder');
 
 const dialog = {
     DOCTOR: 'Please find corporate doctor schedule here https://softserveinc.facebook.com/groups/1091213570989488/',
-    KE: `Please request Knowledge Evaluation for the next position here https://jira.softserveinc.com/secure/CreateIssueDetails!init.jspa?pid=10231&issuetype=19 \n\n
-        Also please find training catalog and career map links below, i hope they will be useful:\n
-        Training Catalog\n  https://softserve.csod.com/LMS/BrowseTraining/BrowseTraining.aspx?tab_page_id=-6#f=1&s=544&o=1
-        Career Map\n https://career-map.softservecom.com/map/#
-        Career plan\n https://career-plan.softserveinc.com/#/group/
+    KE: `Please request Knowledge Evaluation for the next position here https://jira.softserveinc.com/secure/CreateIssueDetails!init.jspa?pid=10231&issuetype=19
+        \n\nAlso please find training catalog and career map links below, i hope they will be useful:
+        \nTraining Catalog\n  https://softserve.csod.com/LMS/BrowseTraining/BrowseTraining.aspx?tab_page_id=-6#f=1&s=544&o=1
+        \nCareer Map\n https://career-map.softservecom.com/map/#
+        \nCareer plan\n https://career-plan.softserveinc.com/#/group/
         `,
     WORKDAY: `Please visit workday: https://wd3.myworkday.com/softserve/d/home.htmld
         Here you can find infromation about your time offs, salary reports, information about your mates.
